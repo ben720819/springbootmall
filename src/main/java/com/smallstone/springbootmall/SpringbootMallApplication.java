@@ -9,7 +9,8 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication(scanBasePackages={"com.smallstone.springbootmall.controller"})
 @EnableAutoConfiguration(exclude = {ErrorMvcAutoConfiguration.class})
-@ComponentScan({"com"})
+@ComponentScan ({"com.server", "com.server.config"})
+
 public class SpringbootMallApplication {
 
     public static void main(String[] args) {
