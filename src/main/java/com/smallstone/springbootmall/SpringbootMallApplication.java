@@ -11,7 +11,8 @@ import org.springframework.context.annotation.ComponentScan;
 @RestController
 
 public class SpringbootMallApplication {
-
+    @RequestMapping("/")
+    
     public static void main(String[] args) {
         SpringApplication.run(SpringbootMallApplication.class, args);
     }
