@@ -17,7 +17,7 @@ import javax.validation.Valid;
 
 @Validated
 @RestController
-@RequestyMapping("user")
+@RequestMapping("/user")
 
 public class UserController {
     
