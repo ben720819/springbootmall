@@ -9,8 +9,6 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication(scanBasePackages = "com.smallstone.springbootmall.*")
 
-@ComponentScan ({"com.smallstone.springbootmall"})
-
 public class SpringbootMallApplication {
 
     public static void main(String[] args) {
