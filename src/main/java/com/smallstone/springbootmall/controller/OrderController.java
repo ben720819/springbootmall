@@ -17,7 +17,7 @@ import javax.validation.constraints.Min;
 import java.util.List;
 
 @Validated
-@stController
+@Controller
 public class OrderController {
 
     @Autowired
