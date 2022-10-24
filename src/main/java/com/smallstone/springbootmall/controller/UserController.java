@@ -19,6 +19,7 @@ import java.util.map;
 
 @Validated
 @RestController
+@Controller
 @RequestMapping("/user")
 
 public class UserController {
