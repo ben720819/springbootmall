@@ -18,7 +18,7 @@ import javax.validation.constraints.Min;
 import java.util.List;
 
 @Validated
-@Controller
+@RestController
 public class ProductController {
 
     @Autowired
