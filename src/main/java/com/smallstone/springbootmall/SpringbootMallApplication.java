@@ -6,8 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration;
 
-@SpringBootApplication(scanBasePackages={"com.smallstone.springbootmall"})
-@ComponentScan(basePackages={"com.smallstone.springbootmall.controller"})
+@SpringBootApplication(scanBasePackages={"com.smallstone.springbootmall.controller"})
 @EnableAutoConfiguration(exclude = {ErrorMvcAutoConfiguration.class})
 
 public class SpringbootMallApplication {
