@@ -8,10 +8,8 @@ import org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConf
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@RestController
 
 public class SpringbootMallApplication {
-    @RequestMapping("/")
     
     public static void main(String[] args) {
         SpringApplication.run(SpringbootMallApplication.class, args);
