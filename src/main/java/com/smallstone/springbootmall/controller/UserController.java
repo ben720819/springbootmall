@@ -24,7 +24,7 @@ public class UserController {
     @Autowired
     private UserService userService;
     
-    @RequestMapping("users/register")
+    @RequestMapping("/users/register")
     public ResponseEntity<User> register(@RequestBody @Valid UserRegisterRequest userRegisterRequest)
     {
         Integer userId = userService.register(userRegisterRequest);
