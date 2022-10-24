@@ -21,6 +21,10 @@ public class UserController {
 
     @Autowired
     private UserService userService;
+    
+    @RequestMapping("/hello")
+    public String hello(){
+        return "HelloWorld";}
 
     @PostMapping("users/register")
     public ResponseEntity<User> register(@RequestBody @Valid UserRegisterRequest userRegisterRequest)
