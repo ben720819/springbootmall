@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.smallstone</groupId>
-    <artifactId>springbootmall</artifactId>
+    <artifactId>springboot-mall</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>springbootmall</name>
+    <name>springboot-mall</name>
     <description>Spring Boot Mall project</description>
     <properties>
         <java.version>11</java.version>
@@ -54,15 +54,13 @@
         </dependency>
     </dependencies>
 
-<build>
-    <plugins>
-        <plugin>
-    <inherited>true</inherited>
-    <groupId>org.apache.maven.plugins</groupId>
-    <artifactId>maven-compiler-plugin</artifactId>              
-</plugin>
-    </plugins>
-</build>
-
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
