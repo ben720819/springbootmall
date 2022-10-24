@@ -24,7 +24,7 @@ public class UserController {
     @Autowired
     private UserService userService;
     
-    @RequestMapping("/users/register")
+    @PostMapping("/users/register")
     public ResponseEntity<User> register(@RequestBody @Valid UserRegisterRequest userRegisterRequest)
     {
         Integer userId = userService.register(userRegisterRequest);
@@ -34,7 +34,7 @@ public class UserController {
         return ResponseEntity.status(HttpStatus.CREATED).body(user);
     }
 
-    @RequestMapping("/users/login")
+    @PostMapping("/users/login")
     public ResponseEntity<User> lgoin(@RequestBody @Valid UserLoginRequest userLoginRequest)
     {
         User user = userService.login(userLoginRequest);
