@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
-@ComponentScan({"com.smallstone.springbootmall.controller"})
 @RestController
 
 public class SpringbootMallApplication {
