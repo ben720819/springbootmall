@@ -8,7 +8,7 @@ import org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConf
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@ComponentScan({ "com.smallstone.springbootmall.controller", "om.smallstone.springbootmall.service" })
+@ComponentScan({ "com.smallstone.springbootmall.controller", "controller", "service" })
 
 public class SpringbootMallApplication {
 
