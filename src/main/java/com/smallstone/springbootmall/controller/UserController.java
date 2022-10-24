@@ -17,11 +17,16 @@ import javax.validation.Valid;
 
 @Validated
 @RestController
-public class UserController {
+@RequestyMapping("user")
 
+public class UserController {
+    
     @Autowired
     private UserService userService;
-
+    
+    @RequestMapping("/findAll")
+    @responseBody
+    
     @PostMapping("users/register")
     public ResponseEntity<User> register(@RequestBody @Valid UserRegisterRequest userRegisterRequest)
     {
