@@ -8,9 +8,7 @@ import org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConf
 
 @SpringBootApplication(scanBasePackages={"com.smallstone.springbootmall.controller"})
 @EnableAutoConfiguration(exclude = {ErrorMvcAutoConfiguration.class})
-@ComponentScan({"com.delivery.request"})
-@EntityScan("com.delivery.domain")
-@EnableJpaRepositories("com.delivery.repository")
+@ComponentScan({"com})
 public class SpringbootMallApplication {
 
     public static void main(String[] args) {
