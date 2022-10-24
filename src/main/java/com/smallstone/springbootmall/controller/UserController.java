@@ -18,6 +18,7 @@ import javax.validation.Valid;
 
 @Validated
 @RestController
+@RequestMapping("Users")
 
 public class UserController {
     
