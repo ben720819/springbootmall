@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.validation.Valid;
 
 @Validated
-@RestController
+@Controller
 public class UserController {
 
     @Autowired
