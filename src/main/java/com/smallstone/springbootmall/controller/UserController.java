@@ -16,13 +16,14 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.validation.Valid;
 
 @Validated
-@Controller
+@RestController
 public class UserController {
 
     @Autowired
     private UserService userService;
 
     @PostMapping("users/register")
+    @ResponseBody
     public ResponseEntity<User> register(@RequestBody @Valid UserRegisterRequest userRegisterRequest)
     {
         Integer userId = userService.register(userRegisterRequest);
